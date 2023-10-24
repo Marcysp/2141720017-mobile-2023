@@ -8,8 +8,10 @@ Kelas: TI-3F
 
 Absen : 03
 
-### Hasil Praktikum
+### Hasil
+| Praktikum | Tugas Praktikum|
+| :---: | :---: |
+| ![](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-08/docs/ezgif.com-video-to-gif.gif) | ![](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-08/docs/ezgif.com-video-to-gif%20(1).gif) |
 
-![](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-08/docs/ezgif.com-video-to-gif.gif)
 
-![](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-08/docs/ezgif.com-video-to-gif%20(1).gif)
+
