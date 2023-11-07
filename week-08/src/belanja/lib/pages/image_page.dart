@@ -9,6 +9,7 @@ class ImagePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(itemArgs.name), // menampilkan nama item di app bar
+        backgroundColor: Colors.red[100],
       ),
       body: Center(
         child: Hero(

@@ -8,5 +8,5 @@ Kelas: TI-3F
 
 Absen : 03
 
-### Hasil Praktikum
+### Praktikum
 
