@@ -73,3 +73,18 @@ Penambahan kedua metode ini memiliki tujuan untuk menyediakan informasi tambahan
 ##### 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
 Widget SafeArea ditempatkan untuk menempatkan teks plan.completenessMessage di bagian bawah layar, di luar daftar tugas. Hal ini dilakukan untuk memastikan bahwa teks tersebut tidak terhalang oleh elemen UI lainnya, seperti tombol navigasi sistem atau area status di perangkat. Anda dapat melihat hasil dari penempatan ini pada gambar bergerak yang terdapat pada nomor 1.
+
+### Praktikum 3
+
+#### Tugas Praktikum 3
+
+##### 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
+
+##### 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+
+Dari gambar diagram berdasarkan praktikum 3  terdapat 2 sturktur utama yang pertama yaitu merupakanyaitu halaman PlanCreatorScreen, struktur untuk membuat sebuah rencana yang dimana kita dapat memiliki lebih dari 1 rencana yang nantinya rencana tersebut akan di susun dalam list. Setelah itu, pengguna dapat mengklik rencana perjalanan tersebut untuk berpindah ke halaman PlanScreen.di halaman PlanScreen ini pengguna dapat memasukkan detail pekerjaan, seperti todolist. Setelah pengguna memasukkan semua detail pekerjaan, data rencana perjalanan akan disimpan ke dalam komponen PlanProvider.
+
+
+##### 3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+Dalam Langkah 14, fungsionalitas baru ditambahkan ke dalam PlanCreatorScreen, memungkinkan pengguna untuk membuat dan menampilkan daftar rencana (plans) baru. Langkah ini juga membantu mengimplementasikan dua layar yang terhubung secara berkesinambungan. Layar pertama, PlanCreatorScreen, memberikan pengguna kemampuan untuk membuat rencana baru, sementara layar kedua, PlanScreen, memungkinkan pengguna untuk melihat rincian dari rencana yang telah dibuat, serta melakukan penambahan, penghapusan, atau pengeditan tugas di dalamnya. Semua proses ini terintegrasi dengan lancar menggunakan PlanProvider untuk mengelola data secara efisien dan terstruktur.
