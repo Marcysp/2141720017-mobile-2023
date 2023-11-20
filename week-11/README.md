@@ -51,3 +51,25 @@ jadi seluruh struktur ini memberikan pengguna kemampuan untuk melihat daftar tug
 - Langkah 11: Tambah method dispose()
 Metode dispose() dipanggil ketika widget ini dihapus dari pohon widget dan akan melepaskan semua sumber daya yang dimiliki oleh widget. Dalam kode Anda, dispose() digunakan untuk membuang ScrollController yang telah dibuat sebelumnya.
 ![Alt text](docs/tp1.5_2.png)
+
+### Praktikum 2
+
+#### Tugas Praktikum 2
+
+##### 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
+
+##### 2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+
+Widget yang diwarisi (InheritedWidget) pada Langkah 1 mengembalikan notifikasi dari context.dependOnInheritedWidgetOfExactType()!.notifier!. Penggunaan InheritedNotifier penting karena memfasilitasi pengiriman notifikasi ketika ada perubahan pada data yang diamati (notifier). Pada konteks ini, PlanProvider menggunakan ValueNotifier untuk mengelola perubahan pada data Plan. Oleh karena itu, ketika ada perubahan pada data Plan, PlanProvider akan memberi tahu widget-widget di bawahnya yang menggunakan data tersebut untuk melakukan pembaruan (rebuild).
+
+##### 3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
+
+Fungsi completedCount: Metode ini menghitung jumlah tugas yang telah selesai dalam rencana (plan) dengan menggunakan metode where pada daftar tugas dan menghitung berapa banyak tugas yang memiliki atribut complete dengan nilai true.
+
+Fungsi completenessMessage: Metode ini menghasilkan pesan yang menyatakan seberapa banyak tugas yang telah diselesaikan dari total tugas dalam rencana (plan). Pesan ini mengambil informasi dari metode sebelumnya (completedCount) dan menyajikan pesan dengan format yang menyatakan jumlah tugas yang sudah selesai dari total tugas.
+
+Penambahan kedua metode ini memiliki tujuan untuk menyediakan informasi tambahan terkait rencana yang sedang ditampilkan, seperti memberikan informasi seberapa banyak tugas yang telah diselesaikan.
+
+##### 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+Widget SafeArea ditempatkan untuk menempatkan teks plan.completenessMessage di bagian bawah layar, di luar daftar tugas. Hal ini dilakukan untuk memastikan bahwa teks tersebut tidak terhalang oleh elemen UI lainnya, seperti tombol navigasi sistem atau area status di perangkat. Anda dapat melihat hasil dari penempatan ini pada gambar bergerak yang terdapat pada nomor 1.
