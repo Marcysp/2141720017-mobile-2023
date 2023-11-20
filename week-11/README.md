@@ -12,7 +12,7 @@ Absen : 03
 
 #### Hasil Praktikum 1
 
-Gif
+![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-11/docs/p1.gif)
 
 #### Tugas Praktikum 1
 
@@ -30,7 +30,7 @@ Lalu variabel ini dibuat konstan ini merupakan cara untuk menginisialisasi varia
 
 ##### 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
-gif
+![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-11/docs/week-11p1tugas%20no%204.gif)
 
 Pada praktikum 1 mulai dari langkah 1 hingga langkah 9 ini kita membuat sebuah aplikasi yang dapat membuat to-do list dengan struktur kode mencakup :
 
@@ -58,6 +58,8 @@ Metode dispose() dipanggil ketika widget ini dihapus dari pohon widget dan akan 
 
 ##### 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
 
+![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-11/docs/pt2.gif)
+
 ##### 2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
 
 Widget yang diwarisi (InheritedWidget) pada Langkah 1 mengembalikan notifikasi dari context.dependOnInheritedWidgetOfExactType()!.notifier!. Penggunaan InheritedNotifier penting karena memfasilitasi pengiriman notifikasi ketika ada perubahan pada data yang diamati (notifier). Pada konteks ini, PlanProvider menggunakan ValueNotifier untuk mengelola perubahan pada data Plan. Oleh karena itu, ketika ada perubahan pada data Plan, PlanProvider akan memberi tahu widget-widget di bawahnya yang menggunakan data tersebut untuk melakukan pembaruan (rebuild).
@@ -79,6 +81,8 @@ Widget SafeArea ditempatkan untuk menempatkan teks plan.completenessMessage di b
 #### Tugas Praktikum 3
 
 ##### 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
+
+![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-11/docs/p3.gif )
 
 ##### 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
 
