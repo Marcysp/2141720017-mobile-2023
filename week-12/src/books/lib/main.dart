@@ -49,11 +49,14 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: const Text('GO!'),
               onPressed: () {
-                getNumber().then((value) {
-                  setState(() {
-                    result = value.toString(); 
-                  });
-                });
+                returnFG();
+                // getNumber().then((value) {
+                //   setState(() {
+                //     result = value.toString();
+                //   });
+                // }).catchError((e){
+                //   result = 'An error occured';
+                // });
                 // count();
                 // setState(() {});
                 // getData().then((value) {
@@ -97,7 +100,8 @@ class _FuturePageState extends State<FuturePage> {
     await Future.delayed(const Duration(seconds: 3));
     return 3;
   }
-  Future count() async{
+
+  Future count() async {
     int total = 0;
     total = await returnOneAsync();
     total += await returnTwoAsync();
@@ -106,15 +110,45 @@ class _FuturePageState extends State<FuturePage> {
       result = total.toString();
     });
   }
-  Future getNumber(){
+
+  Future getNumber() {
     completer = Completer<int>();
     calculate();
     return completer.future;
   }
 
   Future calculate() async {
-    await Future.delayed(const Duration(seconds: 5));
-    completer.complete(42);
+    // await Future.delayed(const Duration(seconds: 5));
+    // completer.complete(42);
+    try {
+      await new Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError({});
+    }
+  }
+
+  void returnFG() {
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
+    // FutureGroup<int> futureGroup = FutureGroup<int>();
+    // futureGroup.add(returnOneAsync());
+    // futureGroup.add(returnTwoAsync());
+    // futureGroup.add(returnThreeAsync());
+    // futureGroup.close();
+    // futureGroup.future.then((List<int> value) {
+    futures.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
   }
 }
 

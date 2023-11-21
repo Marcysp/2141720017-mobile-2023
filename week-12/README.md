@@ -62,3 +62,21 @@ saat method calculate() di panggil maka Fungsi ini menunggu (await) selama 5 det
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
 
 ![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-12/docs/praktikum3_soal5.gif)
+
+### soal 6
+- Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+pada langkah 2 ketika terjadi eror selama proses 'await Future.delayed', maka Completer akan di selesaikan dengan nilai 42 dan tidak ada penanganan yang dilakukan. 
+
+namun pada langkah 5-6 menggunakan try-catch sehingga jika terjadi kesalahan selama proses 'await Future.delayed' maka akan dilakukan proses lanjutan sehingga nantinya hasil dari Completer bukanlah 42 namun sebuah kalimat 'An error occurred'.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+![hippo](/week-12/docs/praktikum3_soal6.gif)
+
+### soal 7 Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
+
+![hippo](/week-12/docs/praktikum4_soal7.gif)
+
+### soal 8 Jelaskan maksud perbedaan kode langkah 1 dan 4!
+Pada langkah pertama setiap setiap function perlu ditambahkan terlebih dahulu sebagai future kedalam objek futureGroup dan perlu menggunakan method close agar objek tidak dapat menambahkan future lagi, yang selanjutnya setiap function ini akan dijalankan, barulah method then dijalankan. 
+
+Sedangkan pada langkah keempat setiap function langsung dijalankan dan ditunggu hasilnya, sama seperti futureGroup Future.wait juga akan menghasilkan data bertipe list.
