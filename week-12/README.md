@@ -1,3 +1,13 @@
+## Tugas pertemuan 12 Pemrograman Mobile - Pemrograman Asynchronous ##
+
+Nama : Alvina Marcy Syakirah Permata
+
+NIM : 2141720017
+
+Kelas: TI-3F
+
+Absen : 03
+
 ## Praktikum 1
 ### soal 1 Tambahkan nama panggilan Anda pada title app sebagai identitas hasil pekerjaan Anda.
 ![Screen shoot](/week-12/docs/p1s1.png)
@@ -36,7 +46,19 @@ returnOneAsync() + returnTwoAsync() + returnThreeAsync()
 lalu mengapa baru tampil setelah 9 detik karena masing2 method pada langkah 1 memiliki delay 9 detik
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
+
+angka baru akan muncul setelah 9 detik 
 ![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-12/docs/praktikum2.gif)
 
 
+### soal 5
+- Jelaskan maksud kode langkah 2 tersebut!
+late Completer completer;: Mendeklarasikan variabel completer sebagai objek Completer. Completer digunakan untuk mengontrol suatu operasi asinkron dan menghasilkan objek Future. Penggunaan late menandakan bahwa variabel tersebut akan diinisialisasi sebelum digunakan, meskipun saat deklarasi belum diberikan nilai awal.
 
+ketika method getNumber() di panggil maka ia akan menjalankan method calculate() terlebih dahulu agar ia dapat mengembalikan nilai dari Future tersebut
+
+saat method calculate() di panggil maka Fungsi ini menunggu (await) selama 5 detik menggunakan Future.delayed untuk mensimulasikan operasi yang membutuhkan waktu. Setelah itu, completer diisi dengan nilai 42 menggunakan metode complete.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+![hippo](https://github.com/Marcysp/2141720017-mobile-2023/blob/main/week-12/docs/praktikum3_soal5.gif)
