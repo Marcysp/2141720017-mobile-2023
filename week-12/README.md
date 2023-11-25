@@ -117,3 +117,8 @@ kesalahan ini muncul karena mengimpor 'dart:ffi' di file 'geolocation.dart' yang
 
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
 
+### Soal 14
+Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+
+tidak ada perbedaan UI karena tambahan kode hanya menambahkan  handleError yang tidak mempengaruhi tampilan UI
+![Alt text](/week-12/docs/praktikum7_soal14.gif)

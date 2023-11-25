@@ -45,12 +45,12 @@ class _LocationScreenState extends State<LocationScreen> {
             builder: (BuildContext context, AsyncSnapshot<Position> snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return const CircularProgressIndicator();
-              }
-              else if(snapshot.connectionState == 
-              ConnectionState.done){
+              } else if (snapshot.connectionState == ConnectionState.done) {
+                if (snapshot.hasError) {
+                  return Text('Something terrible happened!');
+                }
                 return Text(snapshot.data.toString());
-              }
-              else {
+              } else {
                 return const Text('');
               }
             },
