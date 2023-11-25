@@ -84,3 +84,24 @@ Sedangkan pada langkah keempat setiap function langsung dijalankan dan ditunggu 
 ### soal 9 Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
 
 ![hippo](/week-12/docs/praktikum5_soal9.gif)
+
+### soal 10 Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+Perbedaan antara langkah 1 dan langkah 4 terletak pada cara penanganan kesalahan (error). Pada langkah pertama, penanganan kesalahan dilakukan langsung pada ElevatedButton, sementara pada langkah keempat, penanganan kesalahan terlebih dahulu ditangani oleh fungsi handleError(). Sebagai hasilnya, pada ElevatedButton pada langkah keempat, hanya perlu menjalankan fungsi handleError() tanpa harus memproses atau menanggapi hasil dari fungsi yang dipanggil. Meskipun skema penanganan kesalahan tetap sama antara keduanya.
+
+### Soal 11 Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+![Alt text](/week-12/docs/p6s11.png)
+
+### Soal 12
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode 
+![Alt text](/week-12/docs/p6s12.png)
+
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+ya, koordinat GPS didapat karena kita menggunakan  plugin geolocator untuk mendapatkan posisi geografis (koordinat GPS) perangkat. namun plugin ini hanya dapat berjalan ketika di jalankan di perangkat seluler dan tidak memiliki dukungan langsung untuk aplikasi Flutter yang dijalankan di browser.
+ini sebagai bukti saat di run di browser
+kesalahan ini muncul karena mengimpor 'dart:ffi' di file 'geolocation.dart' yang tidak tersedia di platform web (browser)
+
+![Alt text](/week-12/docs/p6s12_2.png)
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
+![Alt text](/week-12/docs/praktikum6_soal12.gif)
