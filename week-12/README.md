@@ -105,3 +105,15 @@ kesalahan ini muncul karena mengimpor 'dart:ffi' di file 'geolocation.dart' yang
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
 ![Alt text](/week-12/docs/praktikum6_soal12.gif)
+
+### Soal 13
+
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
+    Praktikum kedua memiliki tampilan antarmuka (UI) yang serupa dengan praktikum pertama. Kesamaan ini disebabkan oleh penggunaan metode yang sama untuk menampilkan data lokasi geografis, serta adanya penundaan selama 3 detik pada keduanya. Tidak hanya itu, UI praktikum kedua tampak identik dengan praktikum pertama karena implementasi FutureBuilder yang secara otomatis mengelola pembaruan antarmuka tanpa memerlukan pemanggilan langsung pada metode setState.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+![Alt text](/week-12/docs/praktikum7_soal13.gif)
+
+- Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
