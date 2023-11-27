@@ -15,3 +15,10 @@ Absen : 03
 - Lakukan commit hasil jawaban Soal 1 dengan pesan "W13: Jawaban Soal 1"
 
 ![Alt text](docs/p1s1.png)
+
+### Soal 2
+
+- Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
+- Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
+
+![Alt text](docs/p1s2.png)
