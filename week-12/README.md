@@ -122,3 +122,16 @@ Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 
 tidak ada perbedaan UI karena tambahan kode hanya menambahkan  handleError yang tidak mempengaruhi tampilan UI
 ![Alt text](/week-12/docs/praktikum7_soal14.gif)
+
+### Soal 15 
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+- Silakan ganti dengan warna tema favorit Anda.
+![Alt text](/week-12/docs/p8s15.png)
+
+### Soal 16
+
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+
+![Alt text](/week-12/docs/praktikum8_soal16.gif)
