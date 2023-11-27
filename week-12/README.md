@@ -135,3 +135,11 @@ tidak ada perbedaan UI karena tambahan kode hanya menambahkan  handleError yang 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
 
 ![Alt text](/week-12/docs/praktikum8_soal16.gif)
+
+### Soal 17
+
+- Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+- Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
+
+7![Alt text](/week-12/docs/praktikum9_soal16.gif)

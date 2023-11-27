@@ -38,7 +38,7 @@ class _NavigationSecondState extends State<NavigationSecond> {
                   Navigator.pop(context, color);
                 }),
           ],
-        )
+        ),
         ),
     );
   }
