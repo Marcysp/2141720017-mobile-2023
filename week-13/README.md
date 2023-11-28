@@ -61,6 +61,20 @@ Jelaskan maksud kode langkah 8 dan 10 tersebut!
     Kode ini merupakan metode yang disebut addRandomNumber. Fungsinya adalah untuk menambahkan angka acak ke dalam stream yang dikendalikan oleh objek numberStreamController.
     Metode addRandomNumber() pertama-tama menciptakan objek Random() dengan nama random. Objek ini kemudian digunakan untuk menghasilkan nilai integer acak dalam rentang 0 hingga 9, yang disimpan dalam variabel myNum. Selanjutnya, metode addNumberToSink() dari objek numberStream, yang telah dibuat pada langkah kedelapan sebelumnya, dipanggil. Dengan mengakses addNumberToSink() dan memberikan nilai myNum sebagai argumen, nilai ini akan ditambahkan ke dalam aliran data yang telah dibuat.
 
-    ![Alt text](docs/p2s6.gif)
+![Alt text](docs/p2s6.gif)
 
-### 
+### Sola 7
+
+- Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+    - kode langkah 13
+    ![Alt text](docs/p2s7l13.png)
+        - Metode addError() dalam kelas NumberStream digunakan untuk menambahkan kesalahan ke Stream. Kesalahan ini akan diterima oleh pendengar Stream menggunakan metode onError.Stream akan mencetak kesalahan 'Error: Null number received' dan menambahkan kesalahan 'Null number received' ke Stream.
+
+    - kode langkah 14
+    ![Alt text](docs/p2s7l14.png)
+        - Kode digunakan untuk menangani kesalahan yang terjadi pada Stream. Jika kesalahan terjadi, kode ini akan memperbarui state lastNumber menjadi -1 untuk menunjukkan bahwa kesalahan telah terjadi. kesalahan dapat terjadi jika metode addRandomNumber() memanggil metode addError() pada NumberStream. Metode addError() digunakan untuk menambahkan kesalahan buatan ke Stream.
+
+    - kode langkah 15
+    ![Alt text](docs/p2s7l15.png)
+        - Metode numberStream.addError() digunakan untuk menambahkan kesalahan ke Stream.sehingga hal ini digunakan untuk sengaja membuat kesalahan 
+
