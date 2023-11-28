@@ -36,3 +36,11 @@ Absen : 03
 ### Soal 4
 
 ![Alt text](docs/p1s4.gif)
+
+### Soal 5
+
+- Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
+
+    pada awaitfor cara kerja dengan melakukan perulangan untuk mendapatkan data secara berurutan untuk mengambil data dari stream dengan memanggil method getColors(), lalu setiap value akan disimpan di variabel eventColor di setiap perulangannya. 
+    namun blok kode dalam for seperti setState akan dijalankan setelah proses pemanggilan method getColors() selesai dilakukan dan sudah mengembalikan nilai set yang setiap valuenya akan disimpan dalam eventColor.
+    sedangkan pada listen() setiap event atau value yang sudah diterima dapat langsung digunakan dan setState dapat dijalankan tanpa perlu menunggu seluruh Stream selesai.
