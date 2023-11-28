@@ -44,3 +44,23 @@ Absen : 03
     pada awaitfor cara kerja dengan melakukan perulangan untuk mendapatkan data secara berurutan untuk mengambil data dari stream dengan memanggil method getColors(), lalu setiap value akan disimpan di variabel eventColor di setiap perulangannya. 
     namun blok kode dalam for seperti setState akan dijalankan setelah proses pemanggilan method getColors() selesai dilakukan dan sudah mengembalikan nilai set yang setiap valuenya akan disimpan dalam eventColor.
     sedangkan pada listen() setiap event atau value yang sudah diterima dapat langsung digunakan dan setState dapat dijalankan tanpa perlu menunggu seluruh Stream selesai.
+
+### Soal 6
+Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+- kode langkah 8
+
+![Alt text](docs/p2s6l8.png)
+
+    Dalam langkah kedelapan, objek NumberStream dari file stream.dart dibuat terlebih dahulu. Setelah itu, variabel numberStreamController diakses dengan menyimpan controller dari numberStream ke dalamnya. Data stream dari numberStreamController kemudian akan disimpan dalam variabel stream yang memiliki tipe data Stream. Akhirnya, nilai dari stream ini akan digunakan untuk memperbarui nilai dari lastNumber.
+
+- kode langkah 10
+
+![Alt text](docs/p2s6l10.png)
+
+    Kode ini merupakan metode yang disebut addRandomNumber. Fungsinya adalah untuk menambahkan angka acak ke dalam stream yang dikendalikan oleh objek numberStreamController.
+    Metode addRandomNumber() pertama-tama menciptakan objek Random() dengan nama random. Objek ini kemudian digunakan untuk menghasilkan nilai integer acak dalam rentang 0 hingga 9, yang disimpan dalam variabel myNum. Selanjutnya, metode addNumberToSink() dari objek numberStream, yang telah dibuat pada langkah kedelapan sebelumnya, dipanggil. Dengan mengakses addNumberToSink() dan memberikan nilai myNum sebagai argumen, nilai ini akan ditambahkan ke dalam aliran data yang telah dibuat.
+
+    ![Alt text](docs/p2s6.gif)
+
+### 
