@@ -80,10 +80,46 @@ Jelaskan maksud kode langkah 8 dan 10 tersebut!
         - Metode numberStream.addError() digunakan untuk menambahkan kesalahan ke Stream.sehingga hal ini digunakan untuk sengaja membuat kesalahan 
         
 ## Praktikum 3
-### Soal 3
+### Soal 8
 - Jelaskan maksud kode langkah 1-3 tersebut!
     - langkah 1 : membuat objek StreamTransformer dengan nama transformer. nantinya digunakan untuk memanipulasi atau memfilter data pada Streams.
     - langkah 2 : Kode di atas berfungsi untuk mengelola aliran data dengan menggunakan objek StreamTransformer. Objek ini menerima aliran data yang berisi bilangan bulat dan menghasilkan aliran data dengan nilai juga dalam bentuk bilangan bulat. Pada parameter pertama, apabila aliran data tidak mengalami error, nilai dari aliran tersebut akan diperbarui dengan cara dikalikan dengan 10 dan hasilnya ditambahkan kembali ke dalam aliran data. Selanjutnya, pada parameter kedua, jika terjadi error pada aliran data, nilai dalam aliran tersebut akan diperbarui menjadi -1. Setelah proses selesai, filter ini akan ditutup
     - langkah 3 : Objek transformer yang telah dibuat sebelumnya akan digunakan dalam blok kode ini. Prosesnya akan mengubah data berdasarkan parameter yang telah ditentukan sebelumnya. Jika proses berlangsung tanpa adanya error, nilai yang sebelumnya telah ditambahkan oleh transformer akan digunakan untuk memperbarui nilai dari variabel lastNumber. Sebaliknya, jika terjadi error selama proses, nilai variabel lastNumber akan diatur kembali menjadi -1.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
-![Alt text](docs/p2s6.gif)
+![Alt text](docs/p3s8.gif)
+
+## Praktikum 4
+### Soal 9
+- Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+    penjelasan kode langkah 2
+
+    Secara keseluruhan, bagian kode initState() memiliki tanggung jawab untuk melakukan inisialisasi terhadap aliran data (stream), membuat langganan (subscription) terhadap aliran tersebut, dan memperbarui nilai yang ditampilkan di antarmuka pengguna (UI) (lastNumber) setiap kali terjadi peristiwa baru yang dikirim melalui aliran data.
+
+    Bagian yang baru dimodifikasi bertujuan untuk memantau perubahan yang terjadi pada suatu stream data.
+
+    Dalam bagian tersebut, terdapat inisialisasi subscription yang dibuat dari stream.listen. Ini menciptakan langganan ke stream yang telah didefinisikan sebelumnya (Stream stream = numberStreamController.stream;). Ketika ada peristiwa baru yang diterima di dalam stream, fungsi yang diberikan pada listen akan dijalankan.
+
+    Penjelasan untuk langkah 6:
+
+    subscription.cancel() merupakan perintah yang menghentikan langganan atau subscription terhadap suatu Stream. Metode cancel() digunakan untuk mengakhiri langganan yang telah dibuat terhadap suatu Stream.
+
+    Pemanggilan subscription.cancel() digunakan untuk memastikan bahwa langganan terhadap Stream yang terjadi pada initState() sudah dihentikan atau dibersihkan ketika stateful widget tidak lagi digunakan atau dihapus dari tree widget.
+
+    Penjelasan untuk langkah 8:
+
+    Fungsi addRandomNumber() bertugas untuk menambahkan bilangan acak ke dalam stream jika stream controller masih aktif. Jika tidak aktif, variabel lastNumber diatur menjadi -1 untuk menandakan adanya kesalahan karena stream controller telah ditutup.
+
+    Ada operasi kondisional. Jika stream controller (numberStreamController) belum ditutup (artinya masih aktif), maka:
+
+    numberStream.addNumberToSink(myNum);: Fungsi addNumberToSink() dipanggil pada objek numberStream untuk menambahkan bilangan yang telah dihasilkan (myNum) ke dalam sink (saluran) stream. Jika stream controller sudah ditutup, kondisi else akan dieksekusi:
+
+    setState(() { lastNumber = -1; });: Mengeset nilai variabel lastNumber menjadi -1. Hal ini dikarenakan stream controller telah ditutup, sehingga tidak dapat menambahkan bilangan baru ke dalam stream.
+
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README
+
+pesan debug Console
+
+![Alt text](docs/p4s9.1.png.png)
+![Alt text](docs/p4s9.2.gif)
