@@ -121,5 +121,20 @@ Jelaskan maksud kode langkah 8 dan 10 tersebut!
 
 pesan debug Console
 
-![Alt text](docs/p4s9.1.png.png)
+![Alt text](docs/p4s9.1.png)
 ![Alt text](docs/p4s9.2.gif)
+
+## Praktikum 5
+### Soal 10
+![Alt text](docs/p5s10.jpg)
+
+Kesalahan "bad state: Stream has already been listened to" muncul karena pada saat menginisialisasi subscription dan subscription2, keduanya mencoba mendengarkan stream yang identik, yaitu stream yang berasal dari numberStreamController.stream. Hal ini menimbulkan konflik karena sebuah stream hanya dapat didengarkan oleh satu subscription pada satu waktu. Kesalahan terjadi karena mencoba membuat subscription2 dengan stream yang sama tanpa menutup subscription terlebih dahulu. Kondisi ini menyebabkan error karena stream sudah memiliki subscription yang masih aktif dari sebelumnya.
+
+### Soal 11
+![Alt text](docs/p5s11.2.gif)
+
+Jelaskan mengapa hal itu bisa terjadi ?
+
+hal tersebut terjadi karena kita memiliki dua buah subscription yang menjalankan stream.listen()
+
+Kedua subscription tersebut berperan dalam menambahkan nilai angka ke dalam string values setiap kali terjadi peristiwa dari stream. Saat tombol 'New Random Number' ditekan dan fungsi addRandomNumber() dipanggil, nilai acak baru ditambahkan ke numberStream. Hal ini mengakibatkan kedua langganan tersebut menerima event dari stream dan keduanya akan memperbarui nilai values. Sebagai hasilnya, setiap kali tombol 'New Random Number' ditekan, setiap langganan akan menambahkan nilai angka ke dalam values, menyebabkan nilai tersebut menjadi dua kali lipat dari seharusnya.
