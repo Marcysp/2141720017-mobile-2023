@@ -45,6 +45,7 @@ Absen : 03
     namun blok kode dalam for seperti setState akan dijalankan setelah proses pemanggilan method getColors() selesai dilakukan dan sudah mengembalikan nilai set yang setiap valuenya akan disimpan dalam eventColor.
     sedangkan pada listen() setiap event atau value yang sudah diterima dapat langsung digunakan dan setState dapat dijalankan tanpa perlu menunggu seluruh Stream selesai.
 
+## Praktikum 2
 ### Soal 6
 Jelaskan maksud kode langkah 8 dan 10 tersebut!
 
@@ -63,7 +64,7 @@ Jelaskan maksud kode langkah 8 dan 10 tersebut!
 
 ![Alt text](docs/p2s6.gif)
 
-### Sola 7
+### Soal 7
 
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
     - kode langkah 13
@@ -77,4 +78,12 @@ Jelaskan maksud kode langkah 8 dan 10 tersebut!
     - kode langkah 15
     ![Alt text](docs/p2s7l15.png)
         - Metode numberStream.addError() digunakan untuk menambahkan kesalahan ke Stream.sehingga hal ini digunakan untuk sengaja membuat kesalahan 
-
+        
+## Praktikum 3
+### Soal 3
+- Jelaskan maksud kode langkah 1-3 tersebut!
+    - langkah 1 : membuat objek StreamTransformer dengan nama transformer. nantinya digunakan untuk memanipulasi atau memfilter data pada Streams.
+    - langkah 2 : Kode di atas berfungsi untuk mengelola aliran data dengan menggunakan objek StreamTransformer. Objek ini menerima aliran data yang berisi bilangan bulat dan menghasilkan aliran data dengan nilai juga dalam bentuk bilangan bulat. Pada parameter pertama, apabila aliran data tidak mengalami error, nilai dari aliran tersebut akan diperbarui dengan cara dikalikan dengan 10 dan hasilnya ditambahkan kembali ke dalam aliran data. Selanjutnya, pada parameter kedua, jika terjadi error pada aliran data, nilai dalam aliran tersebut akan diperbarui menjadi -1. Setelah proses selesai, filter ini akan ditutup
+    - langkah 3 : Objek transformer yang telah dibuat sebelumnya akan digunakan dalam blok kode ini. Prosesnya akan mengubah data berdasarkan parameter yang telah ditentukan sebelumnya. Jika proses berlangsung tanpa adanya error, nilai yang sebelumnya telah ditambahkan oleh transformer akan digunakan untuk memperbarui nilai dari variabel lastNumber. Sebaliknya, jika terjadi error selama proses, nilai variabel lastNumber akan diatur kembali menjadi -1.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+![Alt text](docs/p2s6.gif)
